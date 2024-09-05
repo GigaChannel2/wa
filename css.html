@@ -8,6 +8,8 @@
       body{
         text-align: center;
         font-family: Sans-Serif;
+        background-color: #101010;
+        color: white;
       }
       #stick{
         position: Sticky;
@@ -23,9 +25,9 @@
         text-decoration: none;
         top: 25px;
         padding: 20px;
-        box-shadow: 20px 20px 50px 10px black inset;
+        box-shadow: 20px 20px 50px 10px white inset;
         color: white;
-        border: solid black 4px;
+        border: solid white 4px;
       }
       #hover:hover{
         opacity: 0;
@@ -95,17 +97,76 @@
         background-color: cyan;
         size: 20px;
         box-shadow: 0px;
-        transition: box-shadow 0.6s ease;
+        transition: box-shadow 0.3s ease-out;
         text-decoration: none;
         padding: 20px;
-        transition: border 0.6s ease;
+        transition: border 0.3s ease-out;
         border: solid 2px;
       }
       #butt:hover{
         box-shadow: 5px 5px grey;
-        transition: box-shadow 0.6s ease;
-        transition: border 0.6s ease;
+        transition: box-shadow 0.3s ease-out;
+        transition: border 0.3s ease-out;
         border: solid 0px;
+      }
+      #buttv2{
+        background-color: black;
+       
+        opacity: 1;
+        transition: padding 0.6s ease-out;
+        z-index: 0;
+       width: 200px;
+       height: 200px;
+        text-decoration: none;
+        padding: 12px;
+        
+        border-radius: 5px 5px 5px 5px;
+        max-width: 200px;
+        max-height: 200px;
+        Font-size: 19px;
+      }
+      #buttv2:hover{
+        filter: none;
+        transition: padding 0.6s ease-out;
+        
+      }
+      @property --angle{
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+      #gradient{
+        content: "";
+        
+        width: 155px;
+        height: 25px;
+        background: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+        
+        border-radius: 5px 5px 5px 5px;
+        margin-left: 28%;
+        padding: 30px;
+        
+        max-width: 185px;
+        z-index: -1;
+        
+        animation: spin 3s linear infinite;
+        transition: opacity 0.6s ease-out;
+        transition: filter 0.6s ease-out;
+        filter: none;
+        
+      }
+      #gradient:hover{
+        transition: opacity 0.6s ease-out;
+        transition: filter 0.6s ease-out;
+        filter: blur inset(0.5rem);
+      }
+      @keyframes spin{
+        from{
+          --angle: 0deg;
+        }
+        to{
+          --angle: 360deg;
+        }
       }
     </style>
     <h3 id="stick">This is A "Sticky Position" Text.</h3>
@@ -140,6 +201,15 @@
     <h2>Then...</h2>
     <a href="https://youtu.be/0GeQVtZ6Rd4?si=HyEezdPGSxEUvJT7" id="butt">Become This Button!</a>
     <br>
+    <h2>Then...
+    <br>Become This Button!</h2>
+    <div id="gradient">
+    <a href="https://youtu.be/hoq-7dwxoxE?si=N9DjSVu-wTvUGqKg" id="buttv2">
+      Secret Project
+    </a>
+    </div>
+    <br>
+    <h2>(that thing, took me HOURS to make, and still <br>not finished, i give up, just press the button already)</h2>
     <br>
     <br>
     <h2 id="css">I don't really care if you say this is really ugly, I'm just doing this for fun</h2>
