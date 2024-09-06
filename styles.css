@@ -1,0 +1,23 @@
+body{
+  text-align: center;
+  font-family: Sans-Serif;
+}
+#main{
+  border: solid 5px;
+  border-radius: 15px 15px 15px 15px;
+}
+#navbar{
+  position: fixed;
+  top: 0;
+  height: 50px;
+  background: linear-gradient(cyan, blue);
+  width: 100%;
+}
+Li{
+  display: inline-block;
+  text-align: right;
+  color: black;
+}
+#logo{
+  font-size: 20px;
+}
