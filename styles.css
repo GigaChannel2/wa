@@ -10,7 +10,7 @@ body{
   position: fixed;
   top: 0;
   height: 50px;
-  background: linear-gradient(cyan, blue);
+  background: linear-gradient(0.25turn, cyan, blue);
   width: 100%;
 }
 Li{
