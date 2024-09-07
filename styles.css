@@ -4,20 +4,29 @@ body{
 }
 #main{
   border: solid 5px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 5px 5px 5px 5px;
 }
 #navbar{
   position: fixed;
   top: 0;
   height: 50px;
-  background: linear-gradient(0.25turn, cyan, blue);
-  width: 100%;
+  background: linear-gradient(0.25turn, navy, navy);
+  width: 105%;
+  right: 0px;
+  text-align: right;
+  padding-right: 15px;
 }
-Li{
+#navbut{
   display: inline-block;
   text-align: right;
-  color: black;
+  color: white;
 }
 #logo{
   font-size: 20px;
+}
+
+#list{
+  text-align: left;
+  color: black;
+  list-style-type: disc;
 }

@@ -1,0 +1,21 @@
+#main{
+  text-align: center;
+}
+#bac{
+  text-align: left;
+}
+#back{
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  box-shadow: 20px 20px 50px 10px black inset;
+  padding: 20px;
+  top: 0;
+  position: sticky;
+}
+#desc{
+  text-align: left;
+  border: 5px solid;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
+}
