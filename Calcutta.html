@@ -1,0 +1,141 @@
+<html> 
+ <head><style type="text/css" id="dcoder_stylesheet">body{
+  background-color: hsl(0, 0%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+  
+#bac{
+  text-align: left;
+}
+  
+#back{
+  border: solid black 5px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  box-shadow: 20px 20px 50px 10px black inset;
+  padding: 20px;
+  top: 0;
+  position: sticky;
+}
+  
+button
+{
+  padding: 20px 25px;
+  background-color: hsl(0, 0%, 40%);
+ // font-size: 25;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+  font-family: sans-serif-bold;
+  top: 0;
+  left: 0;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.tlbtn{
+  border-radius: 15px 0px 0px 0px;
+}
+.trbtn{
+  border-radius: 0px 15px 0px 0px;
+}
+
+.blbtn{
+  border-radius: 0px 0px 0px 15px;
+}
+
+.brbtn{
+  border-radius: 0px 0px 15px 0px;
+}
+
+button:hover{
+//  transition: background-color 0.6s ease;
+  background-color: hsl(0, 0%, 50%);
+}
+
+button:active{
+  background-color: hsl(0, 0%, 60%);
+}
+
+input{
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  outline: none;
+  width: 100%;
+  padding: 25px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 45%);
+  color: white;
+  font-size: 25;
+}
+
+#op{
+  background-color: hsl(35, 100%, 55%);
+}
+
+#op:hover{
+  background-color: hsl(35, 100%, 65%);
+}
+
+#op:active{
+  background-color: hsl(35, 100%, 75%);
+}
+
+.calc{
+  background-color: hsl(0, 0%, 30%);
+  max-width: 250px;
+  height: 320px;
+  border-radius: 10px 10px 10px 10px;
+  
+}</style></head> 
+ <body>  
+  <div id="bac">
+    <a id="back"href="main.html">Back</a>
+  </div>
+  <div class="calc"> 
+   <input id="plac" readonly> 
+   <div class="box">
+     <button onclick="addNumber('1')">1</button>
+     <button onclick="addNumber('2')">2</button>
+     <button onclick="addNumber('3')">3</button>
+     <button onclick="addNumber('+')" id="op">+</button>
+     <button onclick="addNumber('4')">4</button>
+     <button onclick="addNumber('5')">5</button>
+     <button onclick="addNumber('6')">6</button>
+     <button onclick="addNumber('-')" id="op">-</button>
+     <button onclick="addNumber('7')">7</button>
+     <button onclick="addNumber('8')">8</button>
+     <button onclick="addNumber('9')">9</button>
+     <button onclick="addNumber('*')" id="op">X</button>
+     <button onclick="addNumber('/')" class="blbtn" id="op">/</button>
+     <button onclick="addNumber('0')">0</button>
+     <button onclick="clearPlac()" id="op">C</button>
+     <button onclick="calculate()" class="brbtn" id="op"> = </button> 
+   </div>
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">const plac = document.getElementById("plac");
+
+function addNumber(input)
+{
+  plac.value += input;
+}
+function clearPlac()
+{
+  plac.value = "";
+}
+function calculate()
+{
+  try{
+    plac.value = eval(plac.value);
+  } catch(error)
+  {
+    plac.value = "Error";
+  }
+}</script></body></html>
