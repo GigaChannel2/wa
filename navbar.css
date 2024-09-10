@@ -1,0 +1,15 @@
+#navbar{
+  position: fixed;
+  top: 0;
+  height: 50px;
+  background: linear-gradient(0.25turn, navy, navy);
+  width: 105%;
+  right: 0px;
+  text-align: right;
+  padding-right: 15px;
+}
+#navbut{
+  display: inline-block;
+  text-align: right;
+  color: white;
+}
