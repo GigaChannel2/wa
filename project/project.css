@@ -1,0 +1,25 @@
+main{
+  font-family: Sans-Serif;
+  position: center;
+}
+
+#proj{
+  background-color: blue;
+  padding: 10px;
+  text-decoration:none;
+  color: black;
+  border: solid 5px;
+}
+
+#proje{
+  display: inline-grid;
+  gap: 10px;
+}
+
+#projetek{
+  display: inline-grid;
+  gap: 10px;
+}
+#protek{
+  padding: 10px
+}
